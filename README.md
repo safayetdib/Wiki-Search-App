@@ -16,7 +16,7 @@ https://user-images.githubusercontent.com/86869464/198703041-0aec2de1-6ada-45af-
 ## Built With
 
 * JAVASCRIPT
-* SASS
+* SASS / SCSS
 * HTML
 * CSS
 
