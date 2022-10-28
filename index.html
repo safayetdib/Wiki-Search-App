@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="A Search App For Searching Wikipedia Contents" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="./dist/css/style.min.css" />
+		<script src="./js/main.js" type="module"></script>
+		<title>Wiki Search! - Contents From Wikipedia</title>
+	</head>
+	<body>
+		<main>
+			<h1 class="offscreen">Wiki Search A Wikipedia Powered Search Engine</h1>
+			<section class="search-entry">
+				<h2 class="offscreen">Search Term Entry</h2>
+				<!-- logo -->
+				<div id="logo" class="logo">
+					<i class="fa-brands fa-wikipedia-w"></i>
+					<p>iki Search..</p>
+				</div>
+				<!-- search bar -->
+				<form id="search-bar" class="search-bar">
+					<label for="search" class="offscreen"
+						>Enter A Search Term Or Phrase</label
+					>
+					<input
+						type="text"
+						id="search"
+						class="search"
+						role="searchbox"
+						autocomplete="off"
+						required />
+					<div class="action-btns">
+						<!-- clear button -->
+						<button
+							id="clear-btn"
+							class="clear-btn button none"
+							type="reset"
+							aria-label="Clear Search Terms">
+							<i class="fa-solid fa-xmark"></i>
+						</button>
+						<!-- search button -->
+						<button
+							id="search-btn"
+							class="search-btn button"
+							type="submit"
+							aria-label="Search Button">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</div>
+				</form>
+			</section>
+			<!-- search result section -->
+			<section id="result-section" class="result-section none">
+				<h2 class="offscreen">Search Results</h2>
+				<!-- stats bar -->
+				<div class="stats-bar">
+					<p id="stats" class="stats" aria-live="assertive"></p>
+				</div>
+				<!-- search results -->
+				<div id="search-results" class="search-results"></div>
+			</section>
+		</main>
+		<!-- footer -->
+		<footer>
+			<p>
+				<span aria-hidden="true">&lt;&lt;</span>
+				Powered By
+				<a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+				<span aria-hidden="true">&gt;&gt;</span>
+			</p>
+		</footer>
+	</body>
+</html>

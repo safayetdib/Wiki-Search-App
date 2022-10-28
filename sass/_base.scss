@@ -1,0 +1,74 @@
+$font-stack: 'Roboto Mono', monospace;
+$font-color: #000;
+$background-color: #e6e6ee;
+$stats-color: rgba(0, 0, 0, 0.8);
+$logo-text-color: rgba(0, 0, 0, 0.7);
+
+$clear-btn-color: rgba(0, 0, 0, 0.4);
+$clear-btn-hover: rgb(180, 0, 0);
+$search-btn-color: rgba(0, 0, 0, 0.6);
+$search-btn-hover: rgb(0, 108, 151);
+
+$card-background-color: #fff;
+$card-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+	rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+$card-shadow-hover: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+	rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+%flex {
+	display: flex;
+	align-items: center;
+}
+
+@mixin flexColumn {
+	@extend %flex;
+	flex-direction: column;
+}
+
+@mixin flexCenter {
+	@extend %flex;
+	justify-content: center;
+}
+
+@mixin mq($size) {
+	@media only screen and (min-width: $size) {
+		@content;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	background-color: $background-color;
+	color: $font-color;
+	font-family: $font-stack;
+	font-size: 16px;
+	letter-spacing: 0.05rem;
+	width: 100vw;
+	min-height: 100vh;
+}
+
+main {
+	@include flexCenter;
+	@include flexColumn;
+	min-height: calc(100vh - 60px);
+	padding-top: 1rem;
+}
+
+footer {
+	width: 100%;
+	height: 60px;
+	@include flexCenter;
+
+	p {
+		font-size: 0.6rem;
+		@include mq(768px) {
+			font-size: 1rem;
+		}
+	}
+}

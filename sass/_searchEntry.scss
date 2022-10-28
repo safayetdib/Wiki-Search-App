@@ -1,0 +1,120 @@
+.search-entry {
+	@include flexColumn;
+
+	.logo {
+		@include flexCenter;
+		margin-bottom: 1rem;
+		@include mq(768px) {
+			margin-bottom: 2.5rem;
+		}
+
+		i {
+			font-size: 22px;
+			background-color: white;
+			color: $stats-color;
+			border: 1px solid $logo-text-color;
+			padding: 0.5rem;
+			margin-right: 0.3rem;
+			@include mq(768px) {
+				font-size: 32px;
+				margin-right: 0.5rem;
+			}
+		}
+		p {
+			color: $logo-text-color;
+			font-size: 18px;
+			font-weight: bold;
+			letter-spacing: 0.1rem;
+			@include mq(768px) {
+				font-size: 22px;
+				letter-spacing: 0.2rem;
+			}
+		}
+	}
+
+	.search-bar {
+		width: 90vw;
+		display: flex;
+		padding: 0.15rem 0.25rem 0.1rem 1.2rem;
+		margin-bottom: 0.7rem;
+		background-color: $card-background-color;
+		border-radius: 30px;
+		box-shadow: $card-shadow;
+		transition: all 0.2s ease-in;
+		@include mq(450px) {
+			width: 80vw;
+		}
+		@include mq(768px) {
+			width: 60vw;
+			padding: 0.2rem 0.3rem 0.2rem 1.5rem;
+			margin-bottom: 1rem;
+			border-radius: 30px;
+		}
+		@include mq(1025px) {
+			width: 50vw;
+		}
+
+		.search {
+			flex-grow: 1;
+			font-family: $font-stack;
+			font-size: 1rem;
+			text-align: left;
+			letter-spacing: 0.15rem;
+			border: none;
+			outline: none;
+			min-width: 150px;
+			@include mq(768px) {
+				font-size: 1.25rem;
+			}
+		}
+
+		.action-btns {
+			display: flex;
+		}
+
+		.button {
+			cursor: pointer;
+			border: 0;
+			outline: none;
+			background: transparent;
+			min-width: 42px;
+			min-height: 42px;
+			@include mq(768px) {
+				min-width: 48px;
+				min-height: 48px;
+			}
+
+			i {
+				font-size: 1rem;
+				@include mq(768px) {
+					font-size: 1.5rem;
+				}
+			}
+		}
+		.button:hover,
+		.button:focus {
+			i {
+				padding-bottom: 0.2rem;
+				border-bottom-width: 1px;
+				border-bottom-style: solid;
+			}
+		}
+
+		.clear-btn {
+			color: $clear-btn-color;
+		}
+		.clear-btn:hover {
+			color: $clear-btn-hover;
+		}
+		.search-btn {
+			color: $search-btn-color;
+		}
+		.search-btn:hover {
+			color: $search-btn-hover;
+		}
+	}
+	.search-bar:hover,
+	.search-bar:focus-within {
+		box-shadow: $card-shadow-hover;
+	}
+}
