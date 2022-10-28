@@ -1,7 +1,8 @@
 # Wiki-Search-App
 
 ### Screenshots
-![safayetalam github io_Wiki-Search-App_(iPad)](https://user-images.githubusercontent.com/86869464/198704257-8254ead7-996f-435e-9019-9c61fcb4883e.png) ![safayetalam github io_Wiki-Search-App_(iPad) (1)](https://user-images.githubusercontent.com/86869464/198704262-0759a675-fffc-48b4-8e8c-d60a006de058.png) ![safayetalam github io_Wiki-Search-App_(iPad) (2)](https://user-images.githubusercontent.com/86869464/198704250-89df8660-ebb5-40a0-9ec7-2583058ae48d.png)
+![safayetalam github io_Wiki-Search-App_(iPad)](https://user-images.githubusercontent.com/86869464/198706972-940b439f-afb3-4609-b3d1-797aee95b4a9.png) ![safayetalam github io_Wiki-Search-App_(iPad) (1)](https://user-images.githubusercontent.com/86869464/198707002-7f38251b-71c6-43ad-897e-18afddc0e82b.png) ![safayetalam github io_Wiki-Search-App_(iPad) (2)](https://user-images.githubusercontent.com/86869464/198707033-41bdb2bc-3104-4fce-834f-a351f655db18.png)
+
 ---
 https://user-images.githubusercontent.com/86869464/198703041-0aec2de1-6ada-45af-b28a-84495a2658e4.mp4
 
