@@ -20,6 +20,6 @@ https://user-images.githubusercontent.com/86869464/198703041-0aec2de1-6ada-45af-
 * HTML
 * CSS
 
-# Live Demo : https://safayetalam.github.io/Wiki-Search-App/
+# Live Demo : https://safayetdib.github.io/Wiki-Search-App/
 
-> GitHub [@SafayetAlam](https://github.com/SafayetAlam) &nbsp;&middot;&nbsp;
+> GitHub [@safayetdib](https://github.com/safayetdib) &nbsp;&middot;&nbsp;
